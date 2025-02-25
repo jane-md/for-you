@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For You 💌</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Hi, Baby Section -->
+        <h1 class="title">Hi, my pretty baby! </h1></h1>
+
+        <!-- Envelope Section -->
+        <div class="envelope-container">
+            <div class="envelope" id="envelope">
+                <div class="top" id="topFlap"></div>
+                <div class="bottom"></div>
+                  <div class="ribbon">
+    <img src="paw.png" alt="Pink Paw Print" class="paw-image">
+</div>
+                <div class="letter" id="letter">
+                    <p class="message-text"><br>
+                        I made this for you because I want to make you smile and I want you to hear something special from me, so listen baby, okay?</br>
+                    </p>
+                </div>
+                <div class="ribbon"></div>
+            </div>
+            <div class="button-container">
+                <button onclick="openEnvelope()">Open</button>
+                <button onclick="closeEnvelope()">Close</button>
+            </div>
+        </div>
+
+        <!-- Flower Gift Section -->
+        <div class="flower-container">
+            <br><button id="gift-btn" onclick="showGift()">Click me 🌷</button></br>
+            <div id="gift-container" class="hidden">
+                <img src="flower.jpg" alt="Flower Picture">
+                <button onclick="hideGift()">Back</button>
+            </div>
+        </div>
+
+        <!-- Songs Section -->
+        <h3>Listen to this, baby</h3>
+
+        <div class="song-container">
+            <button class="play-btn" onclick="playSong(1)">▶ For you</button>
+            <audio id="song1" src="song1.mp3"></audio>
+            <div class="image-container hidden" id="image1">
+                <img src="image1.jpg" alt="Handwritten Letter">
+            </div>
+        </div>
+
+        <div class="song-container">
+            <button class="play-btn" onclick="playSong(2)">▶ Tap for more</button>
+            <audio id="song2" src="song2.mp3"></audio>
+            <div class="image-container hidden" id="image2">
+                <img src="image2.jpg" alt="Handwritten Letter">
+            </div>
+        </div>
+
+        <div class="song-container">
+            <button class="play-btn" onclick="playSong(3)">▶ Just for you, baby</button>
+            <audio id="song3" src="song3.mp3"></audio>
+            <div class="image-container hidden" id="image3">
+                <img src="image3.jpg" alt="Handwritten Letter">
+            </div>
+        </div>
+
+        <p>Thank you for listening, baby. I hope this makes you smile and reminds you of how much you mean to me. 💕</p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
